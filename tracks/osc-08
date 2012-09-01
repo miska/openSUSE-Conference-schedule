@@ -1,0 +1,7 @@
+<p>For testing and debugging the system monitoring tool of a client, we had
+to make the kernel hang in "realistic" ways, similar to what people
+had already experienced in real life.
+To create a kernel module to achieve this task, we had to actually investigate and try to understand what the different real-life bugs were about.
+Learn what we found and share your thoughts on our solution.</p>
+
+<p>Feedback from kernel hackers on additional ways to inject such faults and if this might be a useful addition to the upstream kernel tree would be higly appreciated.</p>
