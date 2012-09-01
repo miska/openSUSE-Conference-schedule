@@ -1,0 +1,5 @@
+<p>This talk is aimed for people who want to know how to build an RPM package and have minimum understanding on how to build a package from source.</p>
+
+<p>The talk will cover the fundamentals on how to build an RPM package from source and how to use the OBS CLI client, osc.</p>
+
+<p>Users will be explained on how to setup a basic environment, create a SPEC file and build their package using OBS.</p>

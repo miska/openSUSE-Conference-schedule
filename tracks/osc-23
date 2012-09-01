@@ -1,0 +1,2 @@
+<p>The new File Server Remote Volume Shadow-Copy Service Protocol (FSRVP) allows for the sharing and remote management of snapshots via CIFS/SMB.</p>
+<p>This talk aims to provide an overview of the protocol, as well as demonstrate a working FSRVP implementation using Samba and Snapper.</p>

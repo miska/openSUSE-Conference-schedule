@@ -1,0 +1,40 @@
+<h5>Client: desktop4education<h5>
+
+<ul>
+<li>Free workstation for students based on openSUSE 12.1 using FOSS</li>
+
+<li>Desktop for elementary schools up to secondary schools</li>
+
+<li>A lot of education-software (LibreOffice, Gimp, Inkscape, Audacity, OpenShot, GeoGebra, wxMaxima, Tipp10, Eclipse, Python, …)</li>
+
+<li>Simple installation from DVD, PXE</li>
+</ul>
+
+<h5>Server: server4education</h5>
+
+<ul>
+<li>Free server for schools based on openSUSE 12.1</li>
+
+<li>Fully qualified domain controller for Windows- and Linux-Clients</li>
+
+<li>We developed new YAST Modules
+<ul>
+    <li>server4education management</li>
+
+    <li>user and group management</li>
+
+    <li>network-share management</li>
+
+    <li>client management</li></ul></li></ul>
+
+<h5>Virtualization:</h5>
+
+<ul><li>Using Vlizedlab (http://www.vlizedlab.at) and virtual machines from (desktop4education, Windows XP, Windows 7) on the client for higher flexibility</li></ul>
+
+<h5>cloud4education:</h5>
+
+<ul>
+<li>Integration from ownCloud into the server4education</li>
+
+<li>The students can easily connect to their files and calendars at school with a browser or with their mobile devices</li>
+</ul>

@@ -1,0 +1,11 @@
+<p>systemd has been integrated and turned on by default in openSUSE 12.1. After the first set of integration bugs, systemd is becoming more and more stable in openSUSE.</p>
+
+<p>What should we do next ?</p>
+<ul>
+<li>drop sysvinit ?</li>
+<li>get packagers to write systemd native units to slowly initscripts</li>
+<li>integrate latest systemd (with udev in the same package)</li>
+<li>world domination !</li>
+</ul>
+
+<p>We might also discuss dracut (cross distribution initramfs generator) if time permit</p>

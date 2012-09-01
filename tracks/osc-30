@@ -1,0 +1,5 @@
+<p>Recently, more and more powerful ARM machines have come up in the market. Today, you can buy ARM based phones, tablets, netbooks, nettops and plenty others. Tomorrow you will even be able to buy ARM based servers.</p>
+
+<p>Sounds like a perfect target for openSUSE! But how do we port openSUSE to a new platform? What issues do we have in getting ourselves rolling? What roles do qemu and kiwi play in all this?</p>
+
+<p>If you're interested to find out all the glorious details of the openSUSE ARM port, listen to this talk!</p>

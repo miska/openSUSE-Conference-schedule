@@ -1,0 +1,2 @@
+<p>Testing is a boring and repetetive task, that is best left to computers who do not get tired.</p>
+<p>This talk will be about openQA - my implementation of a fully automated OS testing framework that covers a lot of the basics from bootloader, over installer to applications for openSUSE, Debian, ArchLinux, FreeBSD and some others.</p>

@@ -1,0 +1,10 @@
+<p>The Booth project extends the HA stack to support GEO clustering, which enables multi-site Pacemaker clusters to form a distributed "supercluster", capable of automatic failover between sites. It intends to keep the business continuity at the most extent, as part of the disaster recovery solution.</p>
+
+<p>Currently the Booth project is hosted on github:
+<a href="https://github.com/ClusterLabs/booth">https://github.com/ClusterLabs/booth</a></p>
+
+<p>In this session, I'd like to share some design and implementation details of the GEO cluster extension, mainly focused on Booth, which we called as Cluster Ticket Manager in our terminology.</p>
+
+<p>I'd like to invite Yan Gao to co-lead this session with me, who implements the integration part from Pacemaker side, which makes Booth work smoothly with Pacemaker.</p>
+
+<p>Last but not least, gathering input from the audience would be very important for us, I'm planning to add some new features to Booth, so any suggestions or comments are highly appreciated!</p>

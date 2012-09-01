@@ -1,0 +1,3 @@
+<p>FreeIPA je Open Source nástroj na správu identit - ať už uživatelů a jejich skupin, strojů nebo například map pro automounter. Integruje v sobě LDAP, Kerberos a DNS server, obalený v uživatelsky příjemném rozhraní a poskytuje také jednoduchý instalátor. V současnosti připravovaná verze 3.0 nabídne zejména jednoduchou integraci s Active Directory.</p>
+<p>Talk publiku představí projekt FreeIPA a jeho možnosti. Více informací o FreeIPA je možné najít na http://www.freeipa.org</p>
+<p>Druhá polovina přednášky představí projekt SSSD, který poskytuje nejen klientskou část pro FreeIPA server, ale také obecný klient pro LDAP a Kerberos včetně Active Directory a je tedy náhradou pro nss_ldap nebo nss-pam-ldapd.</p>

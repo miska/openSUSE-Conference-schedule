@@ -1,0 +1,1 @@
+WrapSix is an implementation of NAT64 in userspace. In my talk I'll cover what one needs to build it and what is important in order to achieve big performance (especially in comparison with other NAT64 implementations). In the second part of the talk I'll talk about running it in a network.

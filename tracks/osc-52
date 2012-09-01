@@ -1,0 +1,12 @@
+<p>Logging is often an afterthought in software development. Even if it is done, it's often limited to debug messages useful only for developers, which is not enough in a production environment. This is why logging should be an integral part of development from the beginning, including a logging infrastructure similar to production environments.</p>
+
+<p>The presentation will show some basic concepts about planing what to log, how to log, and how to use syslog-ng for collecting logs centrally:</p>
+<ul>
+<li>What to log for reporting (SANS top 7 log reports) and for troubleshooting.</li>
+<li>Why to use syslog: the importance of central log collection: security and the ease of use.</li>
+<li>Free form logs vs. structured, how the use of name value pairs eases reporting AND day to day operations.</li>
+<li>CEE: Common Event Expression, standardization of log messages</li>
+<li>How syslog-ng can help you: patterndb to extract useful information from log messages, JSON output and parser for standardized handling of name value pairs, mongodb output to support storing arbitrary name value pairs</li>
+<li>Using opensource tools to search and analyze logs</li>
+
+<p>Syslog-ng is the default syslog implementation in Gentoo and SLES and available in openSUSE.</p>

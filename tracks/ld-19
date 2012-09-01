@@ -1,0 +1,14 @@
+<p>PostgreSQL je celkem dobře zavedená open-source relační databáze s
+ poměrně unikátními vlastnostmi, která v posledních letech zaznamenává
+ velmi bouřlivý rozvoj - implementaci nových vlastností, různá
+ vylepšení, vznik komerčních derivátů, firem poskytujících komerční
+ podporu a investujících do vývoje, atd.</p>
+
+<p>Podívejme se co zajímavého vám PostgreSQL může nabídnout - počínaje
+ benevolentní BSD-like licencí a otevřenou komunitou, přes zajímavé
+ vlastnosti jako jsou CTE nebo window funkce, nadstavby typu PostGIS
+ až po otevřenou komunitu nebo celkem "pěkný" zdrojový kód.</p>
+
+<p>Firma GoodData se před rokem rozhodla migrovat z MySQL na PostgreSQL,
+ tak se podívejme co nás k tomu vedlo, co se splnilo a co naopak
+ zaskřípalo.</p>
