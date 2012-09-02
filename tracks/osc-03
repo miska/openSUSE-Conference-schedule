@@ -1,0 +1,7 @@
+<p>AppArmor is an effective and easy-to-use Linux application security system. It restricts applications to their known-good set of permissions (called "AppArmor profile"), enforces this good behaviour and prevents even unknown application flaws from being exploited.</p>
+
+<p>This talk explains how to use AppArmor, how to create and update AppArmor profiles, how to secure a typical webserver and some creative usage of AppArmor (for example read-only root access for doing a backup). The syntax of the AppArmor profiles will also be explained.</p>
+
+<p>The talk will last about 30 minutes.</p>
+
+<p>The remaining time can be used as a workshop - every participiant can create an AppArmor profile for his/her favorite program or a program/package he/she maintains in openSUSE (which might be the same ;-)</p>

@@ -1,0 +1,2 @@
+The openSUSE distribution is normally not used for embedded projects, but in these days the differences between a classical PC and embedded devices getting smaller and smaller. Using a distribution like development for embedded platforms is a new way and make it lot easier to enhance the basic functions. The  openSUSE buildservice make it easy to generate packages also for embedded platforms.
+The talk will show how to setup building packages for a embedded platform on a private OBS instance.

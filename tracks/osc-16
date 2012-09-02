@@ -1,0 +1,11 @@
+<p>Got a USB device with an unknown protocol you'd like to support in Linux ?
+This talk is about my experience in reverse-engineering a USB scanner protocol with the help of Google, grep and the usbmon kernel module.</p>
+
+<p>This is the story of my Hackweek8 project - writing a SANE driver for a slide scanner.</p>
+
+<p>I'll show you how to install and use the usbmon kernel module which gives you a detailed dump on USB activities and how to make heads or tails of this data.</p>
+
+<p>Then I do a short detour on the USB protocol basics before looking at identifying device-specific data. Google and grep'ing through existing SANE scanner drivers was quite helpful in understanding the protocol details.</p>
+
+<p>Bring your laptop and your unsupported USB device for some hands-on experience !</p>
+

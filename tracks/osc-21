@@ -1,0 +1,17 @@
+<p>The number of devices which operate in a wireless mode is more and
+more increasing and there are efforts to make multi-gigabit speed
+wireless operating over the currently unlicensed 60 GHz frequency
+band. Thus the transfer of an operating system image over a wireless
+line is no longer just a vision and we prepared a procedure to deploy
+KIWI built appliances over a wireless network to the client.</p>
+
+<p>Booting a computer via the PXE protocol is an established
+process. Most Ethernet network cards are equipped with a firmware that controls the process or at least the BIOS of the computer is able to handle PXE. The client broadcasts for an IP address from a DHCP server followed by calling a bootloader which has to conform to the PXE (Preboot-Execution Environment) specification. On Linux pxelinux is used for this and loads the kernel and initrd via the TFTP protocol.</p>
+
+<p>There is no such execution environment available for wireless
+networks. Therefore we preinstall a small kernel and initrd on the
+client so that it can connect to an access point and starts to operate over the wireless network.</p>
+
+<p>Along with the presentation we will describe in detail how to use this feature, e.g how to add the wireless credentials in a safe way.</p>
+
+<p>We use this feature to deploy cash-registers in stores of large retails operators. In the presentation we describe the use-case and provide also general overview of the SUSE Linux Enterprise Point of Service product.</p>
