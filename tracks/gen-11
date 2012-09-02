@@ -1,0 +1,4 @@
+So why does IsoHunt use Gentoo anyway? What problems were encountered and surpassed?
+Creation of useful tools to help management: managed-portage. managed-portage is the extensive use of stacking 
+profiles to target packages for a specific set of hardware,
+which may be any combination of multiple axes (physical location, hardware class, machine role, etc).

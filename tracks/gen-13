@@ -1,0 +1,3 @@
+For some years now, people are turning away from SHA1. Nevertheless, it
+is at the heart of OpenPGP. In this workshop we identify where SHA1
+gets used in OpenPGP and GnuPG and how to evade SHA1 in this context.

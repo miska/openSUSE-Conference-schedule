@@ -1,0 +1,10 @@
+Andrea will present the results of his Google Summer of Code (2011)
+project, which he is still maintaining. This is a benchmarking suite
+that is capable of comparing the performance and accuracy of
+numerical libraries, even if it is modular enough to potentially
+support every type of benchmark.
+This suite makes use of the main Gentoo features -- in particular
+Portage -- and during his talk he will present some of the advantages
+of the Gentoo infrastructure  in the field of numerical computing
+(but not only) related to the ability of fine-tuning and compiling
+ every software present in the Portage tree and overlays.

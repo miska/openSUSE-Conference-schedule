@@ -1,0 +1,10 @@
+Puppet is an open source central configuration management system.
+In this workshop attendees will get to know its declarative language, and
+how it operates, by doing simple tasks (create files, users, cronjobs),
+setting up a server-client environment, and test it on multiple virtual
+machines running different linux distros. The overall goal is to show all the
+advantages on running puppet from a single laptop to a large datacenter.
+Attendants are requested to have the puppet package installed in their
+systems. As a side note, an unofficial Gentoo Puppet module will be presented.<br />
+Participants are requested to have puppet installed in their system (Gentoo:
+USE="vim-syntax" emerge -av puppet, openSUSE: zypper in puppet)

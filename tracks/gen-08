@@ -1,0 +1,5 @@
+Gentoo Prefix allows to install many software packages on systems ""foreign"" to Gentoo, such as Solaris, Mac OS X and other Linux distributions. It     
+does so by simply installing all software in a file-system offset, any directory chosen by the user. Being in any location brings a second virtue of 
+Gentoo Prefix: administrative privileges are *not* required. In this workshop, Fabian will start with a brief talk about the Gentoo Prefix project, 
+from its history up to the current state of affairs. T    he rest of the workshop is interactive based on questions and answering. Brave participants are 
+encouraged to get their hands dirty by trying to install a Gentoo Prefix on their systems.

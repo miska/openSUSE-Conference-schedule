@@ -1,0 +1,5 @@
+The talk gives an overview on how Open Source Security works, and how
+Gentoo in particular handles vulnerabilities. You'll get to know
+the tools that are available to ensure your packages are safe and
+an outline on other efforts made within Gentoo to enhance the
+safety and security of your system.

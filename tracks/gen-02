@@ -1,0 +1,5 @@
+Many of the typical Gentoo package maintainer duties consist of
+repetitive and manual tasks which could really gain in being batch
+automated with proper pre-configuration. A a first prototype of a project to automate various Gentoo based scripts,
+such as package stabilization and architecture testing, using a
+minimal virtualized tinderbox and volunteer computing will be presented

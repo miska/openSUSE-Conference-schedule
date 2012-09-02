@@ -1,0 +1,4 @@
+The goal of this BoF is to discuss how to use testing on Gentoo to improve QA. The community already has a few testing tools and several developers     
+have worked on solutions to improve and automate testing. One of the goals of this talk is to identify and promote a discussion on the types of automated 
+testing that can / should be done. Further goals would be to increase the interest in this area and try to get enough people involved to work on a 
+design specification and later implementation.
