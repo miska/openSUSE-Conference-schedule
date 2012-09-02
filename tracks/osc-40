@@ -1,0 +1,2 @@
+<p>Set of scripts, built on the top of OSC and RPM. Suitable for everyday packaging work-flow, or for automated creating of updates.</p>
+<p>Presentation discusses usage of these tools, as well as how we use them to automatically update packages like flash-player or acroread.</p>

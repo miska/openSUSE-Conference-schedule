@@ -1,0 +1,3 @@
+<p>Every programming language for scripts has its own online catalog of libraries (cpan, pypi, rubygems, maven) and our rpms compete with them.</p>
+<p>The benefits of packaging such libraries is not really obvious to everyone if the programming languages come with more or less great tools to handle dependencies.</p>
+<p>We need ways to integrate these tools / libraries into openSUSE or the build service. This work shop concentrates the tools we have today.</p>

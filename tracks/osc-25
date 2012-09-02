@@ -1,0 +1,3 @@
+<p>Recently quite a lot of development has been done to implement VFIO, an architecture-independent device-passthrough for qemu. This infrastructure has been merged in linux 3.5 and qemu upstream. Its primary goal is to support SR-IOV with qemu, so that real device-passthrough will be available on all architectures.</p>
+<p>However, some devices like the megasas driver already have a semi-virtualized interface to the hardware. So with VFIO we can lift that hardware interface directly to the guest with just minimal processing. This should give us near bare-metal performance.</p>
+<p>This talk will give an overview over VFIO and how megasas can operate on top of it.</p>

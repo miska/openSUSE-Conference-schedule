@@ -1,0 +1,3 @@
+<p>Recently Kay Sievers pushed a new structured kernel message logging infrastructure into linux 3.5. This allows not only for the normal, string-based printk() messages but also to directly log structured messages.</p>
+<p>This is especially useful for SCSI, where errors are already stored in a highly structured way.</p>
+<p>So this talk will give an overview about the new infrastructure. Also a replacement for the current SCSI logging facility using this new infrastructure will be presented.</p>

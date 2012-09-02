@@ -1,0 +1,3 @@
+<p>openSUSE 12.2 was delayed because of too many unsolved problems and we discussed various solutions on how to track changes better for the future.</p>
+<p>This talk will summarize the work done to improve the situation and discuss further ideas.</p>
+<p>We hope to have some new build service features ready for the conference to support staging projects better, redefine (hermes) notifcations, etc. There are various things we need to improve.</p>
