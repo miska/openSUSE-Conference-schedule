@@ -1,9 +1,9 @@
-The workshop will show how to use catalyst to create custom targets
+<p>The workshop will show how to use catalyst to create custom targets
 for stages and ISOs. The talk will focus on 2 or 3 specific examples
 that can be used as the basis for users to create their own custom
-releases and present a configuration for catalyst to create.
+releases and present a configuration for catalyst to create.</p>
  
-Note: The catalyst run takes sometime, so for users to be able to run
+<p><strong>Note:</strong> The catalyst run takes sometime, so for users to be able to run
 some tests, they must have a speedy box and allocate a few hours / a
 day for the building. Instructions will be provided in advance for
-users to configure theirs systems before the talk starts.
+users to configure theirs systems before the talk starts.</p>

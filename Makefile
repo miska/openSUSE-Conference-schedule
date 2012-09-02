@@ -61,10 +61,11 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 
 sed-rules: Makefile tail-template.html track-template.html tracks/* tracks.info
 	echo '' > tracks.html
-	echo '' > $@
+	rm -f $@
 	cat tail-template.html > tail-generated.html
 	for i in tracks/*; do \
 		code="`echo $$i | sed 's|tracks/||'`"; \
+		echo " * Processing $$code ..." ;\
 		data="`cat tracks.info | sed -e 's|;|:|g' -e 's|\t|;|g' | grep "^$$code;"`"; \
 		description="`cat $$i`"; \
 		authors="`  echo "$$data" | cut -f  4 -d \;`"; \
@@ -75,11 +76,13 @@ sed-rules: Makefile tail-template.html track-template.html tracks/* tracks.info
 		day="`      echo "$$data" | cut -f 11 -d \;`"; \
 		time="`     echo "$$data" | cut -f 12 -d \;`"; \
 		skills="`   echo "$$data" | cut -f 16 -d \;`"; \
-		echo "s|$$title|<img style='float: left;' src='static/$$skills.png'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a><img style='float: right;' src='static/$$lang.png'/>|" >> $@ ; \
+		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a><img style='float: right;' src='static/$$lang.png'/>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
+		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
-	done > $@
-	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&|g' $@
+	done
+	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&amp;|g' -e 's|\/|\\\/|g' \
+			 -e 's|\@|\\\@|g' -e '/^s||/ d' $@
 
 tail.html: tail-template.html tail-generated.html
 	echo -e '  });\n  </script>\n</body>\n</html>' | cat tracks.html tail-generated.html - > $@
