@@ -1,5 +1,5 @@
 all: sed-rules tail.html tail.html schedule-head1.html schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html
-	cat schedule-head1.html in/*.css schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html | sed -f sed-rules | cat - tail.html > schedule-final.html
+	cat schedule-head1.html in/*.css schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html | sed -f sed-rules | cat - tail.html | sed "s|#DATE#|`date +%Y-%m-%d`|" > schedule-final.html
 
 in/Saturday-tidy.html: in/Saturday.html
 	sed -e 's|<td\ class="rShim"\ style="width:0;"></td>||' \
