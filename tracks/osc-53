@@ -1,0 +1,14 @@
+<p>Clojure's interactive features provide programmers with a remarkable ability
+to create software with a unique and highly responsive development process.
+This can be seen to broadly similar to the differences between the waterfall
+model and more recent agile approaches yet at an different timescale - that of
+moments vs minutes, rather than days vs weeks. Programming with an approach
+which allows one moment to flow frictionlessly to another without having to
+wait for compile cycles gives the developer a unique workflow which will be
+examined in detail in this session.</p>
+
+<p>We will cover the art of Live Programming with Clojure, including elements
+such as interactive editors, REPL sessions, realtime visuals and sound, live
+documentation and on-the-fly-compilation whilst repeatedly demonstrating that
+these techniques aren't just useful for artistic endeavours but also a
+powerful and persuasive technique to be applied in industrial contexts.</p>

@@ -6,7 +6,7 @@ echo "<div class='modal fade' id='$code'>
   </div>
   <div class='modal-body'>
     <img style='float: right;' src='static/$skills-big.png'/>
-    <p><strong>Type:</strong> $type (`echo "$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hradcore|'`)</p>
+    <p><strong>Type:</strong> $type (`echo "$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`)</p>
     <p><strong>Language:</strong> `echo $lang | sed -e 's|EN|English|' -e 's|CZ|Czech|'` <img src='static/$lang.png'/></p>
     <p><strong>When:</strong> `echo "$time" | sed 's|-|\ -\ |'` `echo "$day" | sed -e 's|Sat|Saturday|' -e 's|Sun|Sunday|'`</p>
     <p><strong>Where:</strong> $room</p>
