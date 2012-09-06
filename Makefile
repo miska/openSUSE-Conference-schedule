@@ -59,8 +59,9 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 	grep '\.tblGenFixed' $< | sed 's|td.s|td.tue-s|g' > in/Tuesday.css
 	sed -n '/\<table.*/,/<\/table>/ p' $< | sed -e 's|\([\ "]\)\(s[0-9]\+\)\([\ "]\)|\1tue-\2\3|g' > $@
 
-sed-rules: Makefile tail-template.html track-template.html tracks/* tracks.info
+sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info
 	echo '' > tracks.html
+	echo '' > speakers.html
 	rm -f $@
 	cat tail-template.html > tail-generated.html
 	for i in tracks/*; do \
@@ -70,7 +71,7 @@ sed-rules: Makefile tail-template.html track-template.html tracks/* tracks.info
 		description="`cat $$i`"; \
 		authors="`  echo "$$data" | cut -f  4 -d \;`"; \
 		lang="`     echo "$$data" | cut -f  7 -d \;`"; \
-		title="`    echo "$$data" | cut -f  3 -d \;`"; \
+		title="`    echo "$$data" | cut -f  3 -d \; | sed 's|\ *$$||'`"; \
 		type="`     echo "$$data" | cut -f  2 -d \;`"; \
 		room="`     echo "$$data" | cut -f 13 -d \;`"; \
 		day="`      echo "$$data" | cut -f 11 -d \;`"; \
@@ -81,8 +82,22 @@ sed-rules: Makefile tail-template.html track-template.html tracks/* tracks.info
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
 	done
+	echo '' >  sed-rules1
+	for i in speakers/*.info; do \
+		code="`echo $$i | sed 's|speakers/\([^.]*\)\.info|\1|'`"; \
+		echo " * Processing $$code ..." ;\
+		description="`cat $$i`"; \
+		data="`cat speakers.info | sed -e 's|;|:|g' -e 's|\t|;|g' | grep "^$$code;"`"; \
+		name="`    echo "$$data" | cut -f  2 -d \;`"; \
+		website="` echo "$$data" | cut -f  4 -d \;`"; \
+		. ./speaker-template.html.sh >> speakers.html ;\
+		echo "s|$$code|<a href='#$$code' data-toggle='modal'>$$name</a>|" | sed 's|\ |\\\ |g' >> sed-rules1 ; \
+		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
+	done
+	sed -i -f sed-rules1 $@
+	sed -i -f sed-rules1 tracks.html
 	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&amp;|g' -e 's|\/|\\\/|g' \
 			 -e 's|\@|\\\@|g' -e '/^s||/ d' $@
 
 tail.html: tail-template.html tail-generated.html
-	echo -e '  });\n  </script>\n</body>\n</html>' | cat tracks.html tail-generated.html - > $@
+	echo -e '  });\n  </script>\n</body>\n</html>' | cat tracks.html speakers.html tail-generated.html - > $@
