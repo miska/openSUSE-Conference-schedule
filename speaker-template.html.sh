@@ -3,7 +3,7 @@ echo "<div class='modal fade' id='$code'>
   <div class='modal-header'>
     <a class='close' data-dismiss='modal'>&times;</a>
     <h3><em>$name</em></h3>"
-[ -z "$website" ] || echo "    <p><a href='$website'>$website</a></p>"
+[ -z "$website" ] || echo "    <p><a href='$website' target='_blank'>$website</a></p>"
 echo "  </div>
   <div class='modal-body'>"
 [ \! -f "static/$code.jpg" ] || echo "    <img style='float: right;' src='static/$code.jpg'/>"
