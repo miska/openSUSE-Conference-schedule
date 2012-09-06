@@ -1,0 +1,8 @@
+Recent X86 processors have sophisticated power management features
+which can be influenced by the operating system, but are mostly
+hidden. Deep sleep states have latencies which can affect interrupt
+delivery timings significantly. Processor cores can be run at high,
+overclocked frequencies under specific circumstances. CPUpower allows
+to alter the behavior of these features. It can also be used to monitor
+them and to better understand anomalies when measuring CPU or IO
+perfomance of specific workloads.
