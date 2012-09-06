@@ -100,4 +100,4 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 			 -e 's|\@|\\\@|g' -e '/^s||/ d' $@
 
 tail.html: tail-template.html tail-generated.html
-	echo -e '  });\n  </script>\n</body>\n</html>' | cat tracks.html speakers.html tail-generated.html - > $@
+	echo -e '    if(window.location.hash) $$(window.location.hash).modal("show");\n  });\n  </script>\n</body>\n</html>' | cat tracks.html speakers.html tail-generated.html - > $@
