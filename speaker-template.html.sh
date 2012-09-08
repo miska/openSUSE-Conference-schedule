@@ -6,7 +6,7 @@ echo "<div class='modal fade' id='$code'>
 [ -z "$website" ] || echo "    <p><a href='$website' target='_blank'>$website</a></p>"
 echo "  </div>
   <div class='modal-body'>"
-[ \! -f "static/$code.jpg" ] || echo "    <img style='float: right;' src='static/$code.jpg'/>"
+[ \! -f "static/$code.jpg" ] || echo "    <img style='float: right;' src='static/$code.jpg' alt='$name'/>"
 echo "    <p><strong>About the speaker:</strong></p>"
 if [ -z "`echo "$description" | grep '<p>'`" ]; then
     echo "<p>$description</p>"

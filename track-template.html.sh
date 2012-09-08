@@ -5,14 +5,14 @@ echo "<div class='modal fade' id='$code'>
     <h3>$title</h3>
   </div>
   <div class='modal-body'>
-    <img style='float: right;' src='static/$skills-big.png'/>
+    <img style='float: right;' src='static/$skills-big.png' alt='$skill_verb'/>
     <p><strong>Speaker(s):</strong> <em>$authors</em></p>
-    <p><strong>Type:</strong> $type (`echo "$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`)</p>
-    <p><strong>Language:</strong> `echo $lang | sed -e 's|EN|English|' -e 's|CZ|Czech|'` <img src='static/$lang.png'/></p>
-    <p><strong>When:</strong> `echo "$time" | sed 's|-|\ -\ |'` `echo "$day" | sed -e 's|Sat|Saturday|' -e 's|Sun|Sunday|'`</p>
+    <p><strong>Type:</strong> $type ($skill_verb)</p>
+    <p><strong>Language:</strong> $lang_verb <img src='static/$lang.png' alt='$lang_verb'/></p>
+    <p><strong>When:</strong> `echo "$time" | sed 's|-|\ -\ |'` `echo "$day" | sed -e 's|Sat|Saturday|' -e 's|Sun|Sunday|' -e 's|Mon|Monday|' -e 's|Tue|Tuesday|' `</p>
     <p><strong>Where:</strong> $room</p>
     <p><strong>Description:</strong></p>"
-if [ -z "`echo "$description" | grep '<p>'`" ]; then
+if [ -z "`echo "$description" | head -n 1 | grep '^<'`" ]; then
     echo "<p>$description</p>"
 else
     echo "$description"

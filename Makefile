@@ -62,22 +62,27 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info
 	echo '' > tracks.html
 	echo '' > speakers.html
-	rm -f $@
+	echo 's|cellpadding="0"||g' > $@
+	echo 's|cellspacing="0"||g' >> $@
+	echo 's|border="0"||g'      >> $@
+	echo 's|id="tblMain"||g'    >> $@
 	cat tail-template.html > tail-generated.html
 	for i in tracks/*; do \
 		code="`echo $$i | sed 's|tracks/||'`"; \
 		echo " * Processing $$code ..." ;\
 		data="`cat tracks.info | sed -e 's|;|:|g' -e 's|\t|;|g' | grep "^$$code;"`"; \
 		description="`cat $$i`"; \
-		authors="`  echo "$$data" | cut -f  4 -d \;`"; \
-		lang="`     echo "$$data" | cut -f  7 -d \;`"; \
-		title="`    echo "$$data" | cut -f  3 -d \; | sed 's|\ *$$||'`"; \
-		type="`     echo "$$data" | cut -f  2 -d \;`"; \
-		room="`     echo "$$data" | cut -f 13 -d \;`"; \
-		day="`      echo "$$data" | cut -f 11 -d \;`"; \
-		time="`     echo "$$data" | cut -f 12 -d \;`"; \
-		skills="`   echo "$$data" | cut -f 16 -d \;`"; \
-		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a><img style='float: right;' src='static/$$lang.png'/>|" >> $@ ; \
+		authors="`   echo "$$data"   | cut -f  4 -d \;`"; \
+		lang="`      echo "$$data"   | cut -f  7 -d \;`"; \
+		title="`     echo "$$data"   | cut -f  3 -d \; | sed 's|\ *$$||'`"; \
+		type="`      echo "$$data"   | cut -f  2 -d \;`"; \
+		room="`      echo "$$data"   | cut -f 13 -d \;`"; \
+		day="`       echo "$$data"   | cut -f 11 -d \;`"; \
+		time="`      echo "$$data"   | cut -f 12 -d \;`"; \
+		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
+		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
+		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`" ; \
+		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png' alt='$$skill_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a><img style='float: right;' src='static/$$lang.png' alt='$$lang_verb'/>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
