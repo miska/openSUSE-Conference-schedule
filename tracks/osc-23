@@ -1,2 +1,13 @@
-<p>The new File Server Remote Volume Shadow-Copy Service Protocol (FSRVP) allows for the sharing and remote management of snapshots via CIFS/SMB.</p>
-<p>This talk aims to provide an overview of the protocol, as well as demonstrate a working FSRVP implementation using Samba and Snapper.</p>
+<p>  Btrfs is generally considered the next generation filesystem
+  for Linux.  Among its unique features are snapshots. We present
+  two applications making use of btrfs snapshots:</p>
+
+<p>  1. The new File Server Remote Volume Shadow-Copy Service
+  Protocol (FSRVP) allows for the sharing and remote management
+  of snapshots via CIFS/SMB. We aim to provide an overview of the
+  protocol, as well as demonstrate a working FSRVP implementation
+  using Samba.</p>
+
+<p>  2. With snapper you can manage btrfs snapshots and restore your
+  system or individual files. We will illustrate its
+  functionality and present common use-cases.</p>
