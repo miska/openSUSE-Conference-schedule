@@ -1,4 +1,9 @@
-all: sed-rules tail.html tail.html schedule-head1.html schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html
+all: schedule-final.html
+	mkdir -p publish
+	cp -r static publish
+	cp $< publish/index.html
+
+schedule-final.html: sed-rules tail.html tail.html schedule-head1.html schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html
 	cat schedule-head1.html in/*.css schedule-head2.html in/Saturday-data.html in/Sunday-data.html in/Monday-data.html in/Tuesday-data.html | sed -f sed-rules | cat - tail.html | sed "s|#DATE#|`date +%Y-%m-%d`|" > schedule-final.html
 
 in/Saturday-tidy.html: in/Saturday.html
@@ -59,7 +64,7 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 	grep '\.tblGenFixed' $< | sed 's|td.s|td.tue-s|g' > in/Tuesday.css
 	sed -n '/\<table.*/,/<\/table>/ p' $< | sed -e 's|\([\ "]\)\(s[0-9]\+\)\([\ "]\)|\1tue-\2\3|g' > $@
 
-sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info
+sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info speakers/*
 	echo '' > tracks.html
 	echo '' > speakers.html
 	echo 's|cellpadding="0"||g' > $@
@@ -67,6 +72,7 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 	echo 's|border="0"||g'      >> $@
 	echo 's|id="tblMain"||g'    >> $@
 	cat tail-template.html > tail-generated.html
+	# Create talks modals
 	for i in tracks/*; do \
 		code="`echo $$i | sed 's|tracks/||'`"; \
 		echo " * Processing $$code ..." ;\
@@ -88,12 +94,15 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
 	done
 	echo '' >  sed-rules1
+	echo '' >  speakers-list.txt
+	# Create speakers modals
 	for i in speakers/*.info; do \
 		code="`echo $$i | sed 's|speakers/\([^.]*\)\.info|\1|'`"; \
 		echo " * Processing $$code ..." ;\
 		description="`cat $$i`"; \
 		data="`cat speakers.info | sed -e 's|;|:|g' -e 's|\t|;|g' | grep "^$$code;"`"; \
 		name="`    echo "$$data" | cut -f  2 -d \;`"; \
+		echo "$$name" >> speakers-list.txt ;\
 		website="` echo "$$data" | cut -f  4 -d \;`"; \
 		. ./speaker-template.html.sh >> speakers.html ;\
 		echo "s|$$code|<a href='#$$code' data-toggle='modal'>$$name</a>|" | sed 's|\ |\\\ |g' >> sed-rules1 ; \
