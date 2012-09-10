@@ -1,1 +1,9 @@
-Mnoho linuxáků rádo čte maily v textových klientech, které lze snadno používat i vzdáleně a mají i další výhody. Jak je ale využívat efektivním způsobem srovnatelně např. s moderními webmaily typu gmail - rychle vyhledávat ve velkých mailboxech, snadno sledovat konverzace v rozvětvených threadech, atd.? Nejdříve bude představeno efektivní využívání příkazu 'limit' v muttu (např. ve spojení s fulltextovým indexovátkem mailů notmuch a pro skrývání přečtených mailů), pokračovat budeme představením a diskusí nad alternativami a dalšími zajímavými featurami.
+Many Linux users like to read their mails in text mail user agents:
+they are the traditional hacker choice, are easy to use remotely and
+offer other advantages too. But how to use them efficiently in
+comparison with e.g. modern webmails like gmail? That means fast
+fulltext search in large mailboxes, easy tracking of bushy threads, etc.
+First, we will show interesting uses of the 'limit' command in mutt,
+mainly together with the fulltext mail indexer notmuch. An open
+discussion on alternatives, interesting MUA features and other ideas
+will follow.

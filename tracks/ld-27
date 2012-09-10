@@ -1,1 +1,8 @@
-CGroups jsou moderní mechanismus linuxového jádra, který umožňuje sdružovat a hromadně kontrolovat procesy a zdroje, které využívají. Stručně cgroups představíme a popíšeme framework 'compctl', který je používán na pracovních stanicích jedné české univerzitní katedry pro pohodlné a ohleduplné spouštění náročných výpočtů souběžně s běžným používáním ostatními pracovníky. Následovat bude diskuse nad funkcionalitou a dalšími zajímavými využitími cgroups.
+CGroups is a modern linux kernel mechanism that allows grouping
+processes, mass control of their resource usage and group isolation.
+We will give a short cgroups introduction and describe the 'compctl'
+framework that is used on workstations of one Czech university
+department: it allows comfortable and considerate running of expensive
+computations in parallel with regular workstation usage. An open
+discussion on functionality and other interesting uses of cgroups
+will follow.
