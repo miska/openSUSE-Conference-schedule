@@ -88,7 +88,7 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
 		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
 		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`" ; \
-		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png' alt='$$skill_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a><img style='float: right;' src='static/$$lang.png' alt='$$lang_verb'/>|" >> $@ ; \
+		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
