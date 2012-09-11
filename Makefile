@@ -64,7 +64,7 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 	grep '\.tblGenFixed' $< | sed 's|td.s|td.tue-s|g' > in/Tuesday.css
 	sed -n '/\<table.*/,/<\/table>/ p' $< | sed -e 's|\([\ "]\)\(s[0-9]\+\)\([\ "]\)|\1tue-\2\3|g' > $@
 
-sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info speakers/*
+sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info speakers/* speakers.info static/*
 	echo '' > tracks.html
 	echo '' > speakers.html
 	echo 's|cellpadding="0"||g' > $@
@@ -88,7 +88,7 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
 		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
 		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`" ; \
-		[ -z "$$title" ] || echo "s|$$title|<img style='float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
+		[ -z "$$title" ] || echo "s|$$title|<img style='margin: 5px; float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='margin: 5px; float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
