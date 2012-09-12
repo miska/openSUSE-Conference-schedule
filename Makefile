@@ -64,14 +64,14 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 	grep '\.tblGenFixed' $< | sed 's|td.s|td.tue-s|g' > in/Tuesday.css
 	sed -n '/\<table.*/,/<\/table>/ p' $< | sed -e 's|\([\ "]\)\(s[0-9]\+\)\([\ "]\)|\1tue-\2\3|g' > $@
 
-sed-rules: Makefile tail-template.html track-template.html speaker-template.html tracks/* tracks.info speakers/* speakers.info static/*
+sed-rules: Makefile tail-template1.html track-template.html speaker-template.html tracks/* tracks.info speakers/* speakers.info static/*
 	echo '' > tracks.html
 	echo '' > speakers.html
 	echo 's|cellpadding="0"||g' > $@
 	echo 's|cellspacing="0"||g' >> $@
 	echo 's|border="0"||g'      >> $@
 	echo 's|id="tblMain"||g'    >> $@
-	cat tail-template.html > tail-generated.html
+	cat tail-template1.html > tail-generated.html
 	# Create talks modals
 	for i in tracks/*; do \
 		code="`echo $$i | sed 's|tracks/||'`"; \
@@ -79,6 +79,7 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 		data="`cat tracks.info | sed -e 's|;|:|g' -e 's|\t|;|g' | grep "^$$code;"`"; \
 		description="`cat $$i`"; \
 		authors="`   echo "$$data"   | cut -f  4 -d \;`"; \
+		[ -z "$$authors" ] || authors="$$authors : "    ; \
 		lang="`      echo "$$data"   | cut -f  7 -d \;`"; \
 		title="`     echo "$$data"   | cut -f  3 -d \; | sed 's|\ *$$||'`"; \
 		type="`      echo "$$data"   | cut -f  2 -d \;`"; \
@@ -88,7 +89,7 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
 		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
 		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|I|Skilled users|' -e 's|H|Hardcore|'`" ; \
-		[ -z "$$title" ] || echo "s|$$title|<img style='margin: 5px; float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='margin: 5px; float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}:</em> <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
+		[ -z "$$title" ] || echo "s|$$title|<img style='margin: 5px; float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='margin: 5px; float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}</em> <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
@@ -113,5 +114,5 @@ sed-rules: Makefile tail-template.html track-template.html speaker-template.html
 	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&amp;|g' -e 's|\/|\\\/|g' \
 			 -e 's|\@|\\\@|g' -e '/^s||/ d' $@
 
-tail.html: tail-template.html tail-generated.html
-	echo -e '    if(window.location.hash) $$(window.location.hash).modal("show");\n  });\n  </script>\n</body>\n</html>' | cat tracks.html speakers.html tail-generated.html - > $@
+tail.html: tail-generated.html tail-template2.html
+	cat tracks.html speakers.html tail-generated.html tail-template2.html > $@
