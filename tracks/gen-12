@@ -1,6 +1,5 @@
 <ul><li>Intention of this talk is to familiarize students
 with Linux graphics architecture.</li>
 <li>How to correctly set-up a Gentoo system, to use 2D and 3D acceleration.</li>
-<li>Basic information about Direct 3D support in Gallium.</li>
 <li>How to optimize performance under Wine. Correct bug reporting, to help developers in fixing problems faster.</li>
 <li>Future - Wayland, Steam etc.</li></ul>
