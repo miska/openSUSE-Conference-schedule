@@ -1,0 +1,81 @@
+openSUSE Conference schedule repository
+=======================================
+
+What it does?
+-------------
+
+This script and templates takes a data for conference schedule and transforms
+them into static webpage with schedule. Some data are committed in the
+repository, some needs to be downloaded separately as these contains confident
+informations.
+
+What data do I need?
+--------------------
+
+HTML files for days
+~~~~~~~~~~~~~~~~~~~
+
+First of all you need to have access to schedule Google Docs spread sheet. From
+there you need to save sheets labeled with days to +in+ directory. This is used
+to produce nice tables in resulting schedule. We could have created more
+complicated script to create static webpage just from pure data, but this was
+simpler and faster solution. This html webpages are actually stored in the repository for convenience.
+
+TSV for talks and speakers
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Apart from static htmls for days, you need actual data. These are stored in
+'Talks status' sheet and 'Speakers details' sheet.
+
+'Talks status'
+^^^^^^^^^^^^^^
+
+This sheet contains informations about the talks. Will describe only important
+columns used by script.
+
+First is unique ID. This is used to get talk abstract. Abstracts are stored in
++tracks/'$\{talkid\}'+ and it contains piece of HTML. If abstract doesn't start
+with "+<+", it is wrapped up in +<p>+ element.
+
+Second column specifies talk type. It mostly fell into Talk/Workshop/BoF but
+can be basically anything. Third column is talk title. This is also what is
+stored in static HTML and how the talks are matched.
+
+Fourth column is speaker. If we have some BIO, this column contains speaker id.
+If we don't have it, it contains directly speakers name. There can be multiple
+speakers and mix of IDs and real names.
+
+Seventh column can contain either +CZ+ or +EN+ and specifies the language of
+the talk.
+
+Eleventh column specifies day (+Sun/Sat/Mon/Tue+), twelfth time range and
+thirteenth room ID.
+
+Sixteenth column specifies difficulty/expected audience for the talk. Supported
+values are +B+ - 'Beginner', +I+ - 'Intermediate', +H+ - 'Hardcore' and +F+ as
+'Future Media'.
+
+This sheet needs to be exported as TSV (Tab Separated Values) and saved in the root of script directory in file named +tracks.info+.
+
+'Speakers details'
+^^^^^^^^^^^^^^^^^^
+
+This sheet is much sipler. First column is again unique ID (different from talks id), Second column is displayed name and the fourth column is space seperated list of websites.
+
+If we have a speakers BIO, it is stored in +speakers/'$\{speakerid\}'.info+ and
+if we have his photo, it is stored in +static/'$\{speakerid\}'.jpg+.
+
+This sheet needs to be exported as TSV (Tab Separated Values) and saved in the root of script directory in file named +speakers.info+.
+
+How to use it?
+--------------
+
+All you need to do to use this script is run +make+ in the root directory of
+the script after a change and then just publish content of the web directory.
+
+Requirements
+------------
+
+To run this script you need +bash+, +make+, +sed+ and +tidy+. Except from tidy,
+everything else is common part of every distribution and tidy can be found
+here: http://tidy.sourceforge.net/
