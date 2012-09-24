@@ -1,0 +1,6 @@
+Alexander started working for SUSE about 5 years ago. Since then he worked on fancy things like
+mkinitrd, SUSE Studio, QEMU, KVM and ARM.
+
+Whenever something really useful comes to his mind, he tends to implement it. Among others he did
+Mac OS X virtualization using KVM, nested SVM, KVM on PowerPC and openSUSE for ARM. He is the
+upstream maintainer of KVM for PowerPC, QEMU for PowerPC and QEMU for S390x.
