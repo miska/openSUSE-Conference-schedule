@@ -64,10 +64,15 @@ in/Tuesday-data.html: in/Tuesday-tidy.html
 	grep '\.tblGenFixed' $< | sed 's|td.s|td.tue-s|g' > in/Tuesday.css
 	sed -n '/\<table.*/,/<\/table>/ p' $< | sed -e 's|\([\ "]\)\(s[0-9]\+\)\([\ "]\)|\1tue-\2\3|g' > $@
 
-sed-rules: Makefile tail-template1.html track-template.html speaker-template.html tracks/* tracks.info speakers/* speakers.info static/*
+sed-rules: Makefile tail-template1.html track-template.html speaker-template.html tracks/* tracks.info speakers/* speakers.info static/* rooms.info
 	echo '' > tracks.html
 	echo '' > speakers.html
-	echo 's|cellpadding="0"||g' > $@
+	cat ./rooms.info | sed -n 's|\(.*-\ \([0-9]\+\ [a-z]\+\)\)\t\(.*\)|s\|\1\|<em>\3</em>\ -\ \2\||p' > $@
+	cat ./rooms.info | sed -n 's|\(.*\)\ -\ [0-9]\+\ [a-z]\+\t\(.*\)|s\|room\ <strong>\1\|room\ <strong>\2\||p' > tail-rules
+	echo '' >> tail-rules
+	cat ./rooms.info | sed -n 's|\(.*\)\ -\ [0-9]\+\ [a-z]\+\t\(.*\)|s\|<strong>Where:</strong>\ *\1\|<strong>Where:</strong>\ room\ <em>\2</em>\||p' >> tail-rules
+	echo '' >> $@
+	echo 's|cellpadding="0"||g' >> $@
 	echo 's|cellspacing="0"||g' >> $@
 	echo 's|border="0"||g'      >> $@
 	echo 's|id="tblMain"||g'    >> $@
@@ -118,6 +123,8 @@ sed-rules: Makefile tail-template1.html track-template.html speaker-template.htm
 	sed -i -f sed-rules1 tracks.html
 	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&amp;|g' -e 's|\/|\\\/|g' \
 			 -e 's|\@|\\\@|g' -e '/^s||/ d' $@
+	sed -i -e 's|\ |\\\ |g' -e 's|\&|\\\&amp;|g' -e 's|\/|\\\/|g' \
+			 -e 's|\@|\\\@|g' -e '/^s||/ d' tail-rules
 
 tail.html: tail-generated.html tail-template2.html
-	cat tracks.html speakers.html tail-generated.html tail-template2.html > $@
+	cat tracks.html speakers.html tail-generated.html tail-template2.html | sed -f tail-rules > $@
