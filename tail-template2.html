@@ -1,4 +1,15 @@
-    if(window.location.hash) $(window.location.hash).modal("show");
+    if(window.location.hash.match(/.*-[0-9][0-9]/)) {
+      $(window.location.hash).modal("show");
+    }
+    if((window.location.hash == '#sunday')) {
+      $('#dayTab li:eq(1) a').tab('show');
+    } else if((window.location.hash == '#monday')) {
+      $('#dayTab li:eq(2) a').tab('show');
+    } else if((window.location.hash == '#tuesday')) {
+      $('#dayTab li:eq(3) a').tab('show');
+    } else {
+      $('#dayTab a[href="#saturday"]').tab('show');
+    }
   });
   </script>
 <!-- Piwik --> 
