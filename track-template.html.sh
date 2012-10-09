@@ -5,9 +5,9 @@ echo "<div class='modal fade' id='$code'>
     <h3>$title</h3>
   </div>
   <div class='modal-body'>
-    <img style='float: right;' src='static/$skills-big.png' alt='$skill_verb'/>
-    <p><strong>Speaker(s):</strong> <em>$authors</em></p>
-    <p><strong>Type:</strong> $type ($skill_verb)</p>
+    <img style='float: right;' src='static/$skills-big.png' alt='$skill_verb'/>"
+[ -z "$authors" ] || echo "    <p><strong>Speaker(s):</strong> <em>$authors</em></p>"
+echo "    <p><strong>Type:</strong> $type ($skill_verb)</p>
     <p><strong>Language:</strong> $lang_verb <img src='static/$lang.png' alt='$lang_verb'/></p>
     <p><strong>When:</strong> `echo "$time" | sed 's|-|\ -\ |'` `echo "$day" | sed -e 's|Sat|Saturday|' -e 's|Sun|Sunday|' -e 's|Mon|Monday|' -e 's|Tue|Tuesday|' `</p>
     <p><strong>Where:</strong> $room</p>

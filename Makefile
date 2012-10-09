@@ -98,7 +98,7 @@ sed-rules: Makefile tail-template1.html track-template.html speaker-template.htm
 		time="`      echo "$$data"   | cut -f 12 -d \;`"; \
 		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
 		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
-		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|K|Keynote|' -e 's|I|Skilled\ users|' -e 's|H|Hardcore|' -e 's|F|Future\ Media\ audience|'`" ; \
+		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|K|Keynote|' -e 's|I|Skilled\ users|' -e 's|H|Hardcore|' -e 's|F|Future\ Media\ track|'`" ; \
 		[ -z "$$title" ] || echo "s|$$title|<img style='margin: 5px; float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='margin: 5px; float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}</em>$$del <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
