@@ -1,0 +1,20 @@
+Today, openSUSE supports two distinct (and conflictig) approaches for the
+configuration and management of network interfaces. You can either use
+the "traditional" sysconfig based approach with the ifup/ifdown command
+line utilities, or you can use NetworkManager. Both have their pros and
+cons, but neither is really designed to cover all use cases well. At the
+same time, we're faced with a lot of challenges, as the requirements on
+network configuration get more complex. IPv6 has been around for a while
+now, but doing it Right[tm] requires a much more flexible and dyamic
+approach to interface management than we support today. Beyond that,
+virtualization creates a whole new set of problems, with virtual
+interfaces getting created and torn down on the fly, and with management
+facilities like libvirt or openvswitch that are hard to reconcile with
+either of the existing methods.
+
+To address these issues, we would like to propose a unified, layered
+management framework for network interfaces. Some code for this exists
+today, and we are looking into getting this accepted for the next release
+of openSUSE. We would like to use the talk to discuss the design with the
+community, present the current state of the project and gather feedback
+and suggestions.
