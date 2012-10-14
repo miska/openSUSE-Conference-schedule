@@ -1,0 +1,53 @@
+img.skill {
+	margin: 5px;
+	float: left;
+}
+
+img.lang {
+	margin: 5px;
+	float: right;
+}
+
+div.content {
+	position: absolute;
+	top: 160px;
+	padding: 5px;
+}
+
+div.headline {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+	text-align: center;
+}
+
+img.logo {
+	padding: 5px;
+}
+
+@media print {
+	div.content {
+		position: absolute;
+		top: 0px;
+		padding: 0px;
+	}
+
+	div.headline {
+		display: none;
+	}
+
+	.nav-tabs {
+		display: none;
+	}
+
+	img.logo {
+		padding: 5px;
+		height: 1.5cm;
+	}
+
+	.tab-content {
+		margin-top: 0px;
+	}
+}
