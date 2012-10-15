@@ -76,10 +76,10 @@ sed-rules: Makefile tail-template1.html track-template.html speaker-template.htm
 	echo 's|cellspacing="0"||g' >> $@
 	echo 's|border="0"||g'      >> $@
 	echo 's|id="tblMain"||g'    >> $@
-	echo 's|>oSC<|><a href="http://conference.opensuse.org"><img style="padding: 5px;" src="static/suse_male.png" alt="openSUSE Conference 2012"/></a><|g'    >> $@
-	echo 's|>FUTURE MEDIA Track<|><a href="http://bootstrapping-awesome.org/future-media"><img style="padding: 5px;" src="static/fm_male.png" alt="FUTURE MEDIA track"/></a><|g'    >> $@
-	echo 's|>Gentoo<|><a href="http://miniconf.gentoo.org"><img style="padding: 5px;" src="static/gentoo_male.png" alt="Gentoo miniconf"/></a><|g'    >> $@
-	echo 's|>LinuxDays<|><a href="http://www.linuxdays.cz"><img style="padding: 5px;" src="static/linuxdays_male.png" alt="LinuxDays"/></a><|g'    >> $@
+	echo 's|>oSC<|><a href="http://conference.opensuse.org"><img class="logo" src="static/suse_male.png" alt="openSUSE Conference 2012"/></a><|g'    >> $@
+	echo 's|>FUTURE MEDIA Track<|><a href="http://bootstrapping-awesome.org/future-media"><img class="logo" src="static/fm_male.png" alt="FUTURE MEDIA track"/></a><|g'    >> $@
+	echo 's|>Gentoo<|><a href="http://miniconf.gentoo.org"><img class="logo" src="static/gentoo_male.png" alt="Gentoo miniconf"/></a><|g'    >> $@
+	echo 's|>LinuxDays<|><a href="http://www.linuxdays.cz"><img class="logo" src="static/linuxdays_male.png" alt="LinuxDays"/></a><|g'    >> $@
 	cat tail-template1.html > tail-generated.html
 	# Create talks modals
 	for i in tracks/*; do \
@@ -99,7 +99,7 @@ sed-rules: Makefile tail-template1.html track-template.html speaker-template.htm
 		skills="`    echo "$$data"   | cut -f 16 -d \;`"; \
 		lang_verb="` echo "$$lang"   | sed -e 's|EN|English|' -e 's|CZ|Czech|'`" ; \
 		skill_verb="`echo "$$skills" | sed -e 's|B|Beginners|' -e 's|K|Keynote|' -e 's|I|Skilled\ users|' -e 's|H|Hardcore|' -e 's|F|Future\ Media\ track|'`" ; \
-		[ -z "$$title" ] || echo "s|$$title|<img style='margin: 5px; float: left;' src='static/$$skills.png' alt='$$skill_verb'/><img style='margin: 5px; float: right;' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}</em>$$del <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
+		[ -z "$$title" ] || echo "s|$$title|<img class='skill' src='static/$$skills.png' alt='$$skill_verb'/><img class='lang' src='static/$$lang.png' alt='$$lang_verb'/><em>$${authors}</em>$$del <a href='#$$code' data-toggle='modal'>$$title</a>|" >> $@ ; \
 		. ./track-template.html.sh >> tracks.html ;\
 		[ "%%title" ] || echo "$$code failed" ;\
 		echo '    $$("#'"$$code"'").modal({ show: false });' >> tail-generated.html ; \
