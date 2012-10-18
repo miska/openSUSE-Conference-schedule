@@ -1,0 +1,5 @@
+Dirk has worked for SUSE since 2005, and has been involved in openSUSE distribution development
+since the beginning. He started to work on the ARM port in 2011 as part of the SUSE hackweek.  From
+his experience with the openSUSE Build Service and with packaging hundreds of packages in the
+openSUSE distribution, maintaining the rpmlint checks and other build checks in Factory, he knows
+quite a few tricks which helped the ARM porting team in finishing the project quickly.
