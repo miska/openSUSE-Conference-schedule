@@ -1,0 +1,107 @@
+ID	Name	e-mail	website
+ldsp-01	Elvir Kuric 		
+ldsp-02	Florian Nadge		
+ldsp-03	Jakub Hrozek, Martin Košek		
+ldsp-04	Jan Hrach		
+ldsp-05	Jaroslav Řezník		
+ldsp-06	Jiří Eischmann		
+ldsp-07	Jiří Pech		
+ldsp-08	Josef Mlich		
+ldsp-09	Marek Žehra		
+ldsp-10			
+ldsp-11	Michal Hlavatý		
+ldsp-12	Michal Zima		
+ldsp-13	Miro Hrončok		
+ldsp-14	Pavel Šimerda		
+ldsp-15	Petr Baudiš		
+ldsp-16	Petr Kovář		
+ldsp-17	Petr Krčmář		
+ldsp-18	Petr Němec		
+ldsp-19	Petr Šimčík		
+ldsp-20	Radek Neužil		
+ldsp-21	Tadeáš Pařík		
+ldsp-22	Tomáš Bazant		
+ldsp-23	Tomáš Matějíček		
+ldsp-24	Tomáš Vondra		
+ldsp-25	Vladimír Čunát		
+ldsp-26	Vojtěch Trefný		
+oscsp-01	Alexander Graf	agraf@suse.de	
+oscsp-02	Andrew Wafaa	awafaa@opensuse.org	
+oscsp-03	Arul Selvan Rama Samy	connectwitharul@gmail.com	
+oscsp-04	Arvin Schnell	aschnell@suse.de	
+oscsp-05	Bernhard Wiedemann	bernhard+osc2010@lsmod.de	
+oscsp-06	Christian Boltz	opensuse@cboltz.de	
+oscsp-07	Coly Li	colyli@gmail.com	
+oscsp-08	Daniel Lovasko	dlovasko@suse.com	
+oscsp-09	David Disseldorp	ddiss@suse.de	
+oscsp-10	David Majda	dmajda@suse.cz	
+oscsp-11	Davidlohr Bueso	dave@gnu.org	
+oscsp-12	Dinar Valeev	dvaleev@novell.com	
+oscsp-13	Dirk Müller	dmueller@suse.de	
+oscsp-14	Dr. Hannes Reinecke	hare@suse.de	
+oscsp-15	Dr. Vladimir Botka	hare@suse.de	
+oscsp-16	Efstathios Iosifidis	diamond_gr@freemail.gr	
+oscsp-17	Egbert Eich	eich@suse.de	
+oscsp-18	Frederic Crozat	fcrozat@suse.com	
+oscsp-19	Helmuth Peer	helmuth@peer.st	
+oscsp-20	Izabel Valverde	izabelvalverde@opensuse.org	
+oscsp-21	James Tan	jatan@suse.de	
+oscsp-22	Jan Engelhardt	jengelh@inai.de	
+oscsp-23	Jiaju Zhang	jjzhang@suse.com	
+oscsp-24	Jos Poortvliet	jospoortvliet@gmail.com	
+oscsp-25	Karsten Keil	keil@b1-systems.de	
+oscsp-26	Klaas Freitag	freitag@opensuse.org	
+oscsp-27	Klaus Kämpf	kkaempf@suse.de	
+oscsp-28	Kostas Koudaras	warlordfff@gmail.com	
+oscsp-29	Libor Pecháček	lpechacek@suse.cz	
+oscsp-30	Marcus Meissner	meissner@suse.de	
+oscsp-31	Markus Fleck	fleck.markus@gmail.com	
+oscsp-32	Matthias Praunegger	mpraunegger@d4e.at	
+oscsp-33	Max Lin	mlin@suse.com	
+oscsp-34	Michael Meeks	michael.meeks@novell.com	
+oscsp-35	Michal Čihař	mcihar@suse.cz	
+oscsp-36	Michal Hrusecky	michal@hrusecky.net	
+oscsp-37	Michal Vyskočil	mvyskocil@suse.cz	
+oscsp-38	Miguel Angel Barajas	migbarajas@gmail.com	
+oscsp-39	Nelson Marques	nmo.marques@gmail.com	
+oscsp-40	Baltasar Ortega	bortega@kde-espana.es	
+oscsp-41	Peter Czanik	czanik@balabit.hu	http://czanik.blogs.balabit.com/
+oscsp-42	Petr Cerny	pcerny@suse.cz	
+oscsp-52	Petr Uzel	puzel@suse.cz	
+oscsp-43	Prof. Joe Doupnik	jrd@netlab1.oucs.ox.ac.uk	
+oscsp-44	Robert Schweikert	rjschwei@suse.com	
+oscsp-45	Sam Aaron	samaaron@gmail.com	
+oscsp-46	Stefan Reisinger	st.reisinger@gmail.com	
+oscsp-47	Stefan Seyfried	stefan.seyfried@googlemail.com	
+oscsp-48	Stephan Kulow	coolo@suse.de	
+oscsp-49	Thomas Renninger	trenn@suse.de	
+oscsp-50	Tor Lillqvist	tml@iki.fi	
+oscsp-51	Torsten Rahn	rahn@kde.org	
+gensp-01	Alex Legler        	a3li@gentoo.org	http://a3li.li
+gensp-02	Alec Warner	antarus@gentoo.org	
+gensp-03	Andrea Arteaga	andyspiros@gmail.com	http://andyspiros.wordpress.com
+gensp-04	Andreas K. Huettel	dilfridge@gentoo.org	http://dilfridge.blogspot.de
+gensp-05	Christian Aistleitner	christian@quelltextlich.at	
+gensp-06	David Heidelberger	d.okias@gmail.com	
+gensp-07	Fabian Groffen	grobian@gentoo.org	
+gensp-08	Hans de Graaff	graaff@gentoo.org	http://moving-innovations.com/blog
+gensp-09	Jorge Manuel B.S. Vicetto	jmbsvicetto@gentoo.org	http://blogs.gentoo.org/jmbsvicetto
+gensp-10	Markos Chandras	hwoarang@gentoo.org	http://hwoarang.silverarrow.org/
+gensp-11	Robin H. Johnson	robbat2@gentoo.org	http://robbat2.livejournal.com/
+gensp-12	Sebastien Fabbro	bicatali@gentoo.org	
+gensp-13	Theo Chatzimichos	tampakrap@gentoo.org	http://blog.tampakrap.gr/
+gensp-14	Tomáš Chvátal	scarabeus@gentoo.org	http://blogs.gentoo.org/scarabeus
+fmtsp-01	Thijs de Vries		http://eduapp.com/
+fmtsp-02	Shane Coughlan		http://www.openrelief.org/
+fmtsp-03	Ramon Roca		http://guifi.net/en/node/38392
+fmtsp-04	Bas van Abel		http://waag.org/en
+fmtsp-05	Armijn Hemel 		http://www.openinventionnetwork.com/
+fmtsp-06	Georg Greve		http://fsfe.org http://kolabsys.com/
+fmtsp-07	Lydia Pintscher		http://www.wikimedia.de
+fmtsp-08			
+kntsp-01	Agustin Benito Bethencourt	abebe@suse.com	
+oscsp-53	Henne Vogelsang	hvogel@opensuse.org	
+oscsp-54	Widen-Damian Ivanov 	damianatorrpm@gmail.com	http://www.facebook.com/viden1
+oscsp-55	Dalibor Kurek		
+oscsp-56	Michal Švec		
+oscsp-57	Gerhard Rigo		
