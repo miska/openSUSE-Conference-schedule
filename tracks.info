@@ -55,22 +55,22 @@ ld-25	Talk	WrapSix -- how to build it and how to run it	Michal Zima	zima@wrapsix
 ld-26	Workshop	Začněte přispívat do open-source projektů!	ldsp-15	pasky@ucw.cz	50	CZ	after 11 and on 20. 9. before 17:30	yes	yes	Sun	15:00-16:30	PC2	https://docs.google.com/spreadsheet/ccc?key=0AsLVz1HLIhXldGdlaUtuaXJRLWd0aDZWdGpFWG04eVE		B
 ld-27	BoF	Interesting Uses for CGroups	ldsp-15	pasky@ucw.cz	20	EN	after 11 and on 20. 9. after 17:30	yes	yes	Sat	15:00-16:30	PC2	https://docs.google.com/spreadsheet/ccc?key=0AsLVz1HLIhXldGdlaUtuaXJRLWd0aDZWdGpFWG04eVE		I
 ld-28	Talk	Zkušenosti s výukou Open Source University	Jiří Pech	pechj@prf.jcu.cz	20	CZ	none	yes	yes	Sun	11:30-12:00	155	https://docs.google.com/spreadsheet/ccc?key=0AsLVz1HLIhXldGdlaUtuaXJRLWd0aDZWdGpFWG04eVE		B
-osc-01	Talk	A complete server to assist charities	Joe Doupnik		50	EN	none	yes	yes	Mon	10:00-11:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=11		B
+osc-01	Talk	A complete server to assist charities	oscsp-43		50	EN	none	yes	yes	Mon	10:00-11:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=11		B
 osc-02	Talk/BoF	Ambassadors 2.0	Kostas Koudaras			EN		no	yes	Mon	16:00-17:00	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=28		B
 osc-03	Workshop	AppArmor crash course and workshop	Christian Boltz	opensuse@cboltz.de	50	EN	not on saturday or tuesday afternoon	yes	yes	Sun	13:00-14:30	PC1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=38		I
-osc-04	Talk	ARM in the Linux and Open Source Ecosystem	Andrew Wafaa			EN		no	yes	Sun	13:30-14:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=32		B
+osc-04	Talk	ARM in the Linux and Open Source Ecosystem	oscsp-02			EN		no	yes	Sun	13:30-14:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=32		B
 osc-05	Talk	Attitude adjustment needed: Experiences from LibreOffice porting to Android	oscsp-50			EN		no	yes	Sat	16:00-17:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=27		I
 osc-06	Talk	Booth - Geo Clustering for SUSE Linux Enterprise High Availability Extension	oscsp-23	jjzhang@suse.com	20	EN	none	yes	yes	Mon	15:00-15:30	S	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=16		H
 osc-07	Workshop	Building RPMs for starters...	oscsp-53			EN		no	yes	Sat	10:00-11:30	PC1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=9		I
 osc-08	Talk	Crashing the kernel for fun and profit	Stefan Seyfried			EN	none	yes	yes	Sat	17:00-18:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=33		H
 osc-09	Talk	desktop4education and server4education - a free client and server solution for education	oscsp-19, oscsp-31, oscsp-32, Stefan Reisinger	helmuth@peer.st	50	EN	none	yes	yes	Sun	12:00-13:00	155	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=20		B
 osc-10	Talk	dev_printk revisited: structured kernel message logging and the SCSI mess	Hannes Reinecke			EN		no	yes	Mon	11:30-12:00	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=44		H
-osc-11	Talk	DevOps, Puppet & Chef	James Tan			EN		no	yes	Sun	11:30-12:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=49		B
+osc-11	Talk	DevOps, Puppet & Chef	oscsp-21			EN		no	yes	Sun	11:30-12:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=49		B
 osc-12	Talk	Don't stand in the queue, let the queue stand in for you.	oscsp-42			EN		no	yes	Sat	10:00-10:30	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=54		I
 osc-13	Talk	openSUSE release schedule NG	Stephan Kulow			EN		no	yes	Mon	12:00-13:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=42		I
 osc-14	Talk	fdisk: a 21st century disk partitioning tool	oscsp-11, oscsp-52	dave@gnu.org	50	EN	none	yes	yes	Sun	16:0-17:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=34		I
-osc-15	Workshop	Getting the Geeko some ARMs	Andrew Wafaa, oscsp-01, oscsp-13			EN		no	yes	Sun	15:00-17:00	MT1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=21		I
-osc-16	Talk	Google, grep, and usbmon: Reverse-engineering a USB scanner protocol	Klaus Kämpf	kkaempf@suse.de	50	EN		no	yes	Sat	11:00-12:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=41		H
+osc-15	Workshop	Getting the Geeko some ARMs	oscsp-02, oscsp-01, oscsp-13			EN		no	yes	Sun	15:00-17:00	MT1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=21		I
+osc-16	Talk	Google, grep, and usbmon: Reverse-engineering a USB scanner protocol	oscsp-27	kkaempf@suse.de	50	EN		no	yes	Sat	11:00-12:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=41		H
 osc-17	BoF	House cleaning is necessary - Package Maintainers Step up	oscsp-44	rjschwei@suse.com	50	EN	Prior to the "Something is busted..."	yes	yes	Mon	17:00-18:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=6		I
 osc-18	Talk	How software gets from the community to commercial enterprise	oscsp-29			EN		no	yes	Sun	14:30-15:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=3		I
 osc-19	Talk	Introduction to openSUSE KDE maintenance model	oscsp-33			EN	none	yes	yes	Tue	10:00-10:30	S	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=24		B
@@ -80,11 +80,11 @@ osc-22	Talk	LibreOffice - what's new	Michael Meeks	michael.meeks@suse.com	50	EN	
 osc-23	Talk	Make it Snappery - Remote Snapshots with Samba	David Disseldorp, Arvin Schnell	aschnell@suse.de, ...	20	EN	Monday	yes	yes	Mon	11:30-12:00	S	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=7		I
 osc-24	Talk	Marble Virtual Globe - a Swiss Army Knife for Maps	Torsten Rahn	tackat@t-online.de	20	EN	During weekend	yes	yes	Sun	15:00-15:30	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=35		B
 osc-25	Talk	megasas on steroids: qemu device-passthrough with VFIO	Hannes Reinecke			EN		no	yes	Mon	11:00-11:30	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=47		H
-osc-26	Talk	Teaching Free Software for everybody	Ortega Baltasar			EN		no	yes	Sun	13:00-13:30	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=31		B
+osc-26	Talk	Teaching Free Software for everybody	Baltasar Ortega			EN		no	yes	Sun	13:00-13:30	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=31		B
 osc-27	Talk	Nonverbal communication at the booth	oscsp-16	iefstathios@gmail.com	20	EN	none	yes	yes	Mon	17:00-17:30	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=30		B
 osc-28	Talk	Online translation using Weblate	oscsp-35		50	EN	none	yes	yes	Sat	11:30-12:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=15		B
 osc-29	Talk	openQA - fully automated OS testing	Bernhard Wiedemann			EN		no	yes	Sat	10:30-11:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=4		I
-osc-30	Talk	openSUSE ARMs	oscsp-01, oscsp-13, Andrew Wafaa			EN		no	yes	Sun	13:30-14:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=14		I
+osc-30	Talk	openSUSE ARMs	oscsp-01, oscsp-13, oscsp-02			EN		no	yes	Sun	13:30-14:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=14		I
 osc-31	Talk	openSUSE Around the World	Jos Poortvliet			EN		no	yes	Sun	15:30-16:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=10		B
 osc-32	Workshop	openSUSE Jeopardy	Christian Boltz	opensuse@cboltz.de	50	EN	not on saturday on tuesday afternoon	yes	yes	Sun	14:30-16:00	PC1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=39		B
 osc-33	Talk	openSUSE Maintenance - overview of technology and processes	Marcus Meissner	meissner@suse.de	50	EN	none	yes	yes	Mon	15:00-16:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=45		B
@@ -96,19 +96,19 @@ osc-38	Talk	ownCloud under the Hood	oscsp-26		50	EN		no	yes	Sat	14:00-15:00	105	
 osc-39	Workshop	Packaging of perl/python/ruby/java	Stephan Kulow			EN		no	yes	Sat	11:30-13:00	PC1	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=43		I
 osc-40	Talk	Packaging Tool	Daniel Lovasko			EN		no	yes	Mon	10:00-10:30	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=48		I
 osc-41	Talk	POTS, FAX,ISDN in the era of voice over IP	oscsp-25	keil@b1-systems.de	20	EN	none	yes	yes	Sun	17:15-17:45	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=36		B
-osc-42	Talk	Prospective Printing Solutions	Rama Samy, Arul Selvan			EN		no	yes	Sun	17:45-18:15	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=18		B
-osc-43	Talk	Scanny — Ruby on Rails Security Scanner	David Majda		20	EN	none	yes	yes	Sun	15:30-16:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=46		I
+osc-42	Talk	Prospective Printing Solutions	Arul Selvan Rama Samy			EN		no	yes	Sun	17:45-18:15	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=18		B
+osc-43	Talk	Scanny — Ruby on Rails Security Scanner	oscsp-10		20	EN	none	yes	yes	Sun	15:30-16:00	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=46		I
 osc-44	BoF	Something is busted -- Food for thought	oscsp-44		50	EN	after the "House cleaning..."	yes	yes	Mon	16:00-17:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=5		I
 osc-45	Lightning talks	Speedy Geeko	Kostas Koudaras			EN		no	yes	Tue	15:00-16:00	H	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=50		B
 osc-46	BoF	systemd, dracut and openSUSE: where are we, what is missing, what do we plan for the future?  	oscsp-18	fcrozat@suse.com	50	EN	none	yes	yes	Tue	11:30-12:30	S	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=13		I
 osc-47	Talk	The openSUSE Travel Support Program	oscsp-20	izabelvalverde@opensuse.org	50	EN	none	yes	yes	Mon	15:00-16:00	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=25		B
 osc-48	Talk	Use the openSUSE buildservice for embedded projects	oscsp-25	keil@b1-systems.de	20	EN	none	yes	yes	Sun	11:00-11:30	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=37		I
-osc-49	Talk	Watson: Winning Jeopardy with SUSE, Power and Hadoop	Miguel Angel Barajas	migbarajas@gmail.com	50	EN	none	yes	yes	Sun	16:00-17:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=1		B
+osc-49	Talk	Watson: Winning Jeopardy with SUSE, Power and Hadoop	oscsp-38	migbarajas@gmail.com	50	EN	none	yes	yes	Sun	16:00-17:00	105	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=1		B
 osc-50	Talk	Wayland	Egbert  Eich	eich@suse.com	50	EN		no	yes	Sat	13:00-14:00	105			I
 osc-51	Talk	Whats new in openSUSE Connect	Michal Hrušecký	michal@hrusecky.net	20	EN	none	yes	yes	Mon	17:30-18:00	G	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=22		B
 osc-52	Talk	Why proper logging is important even in the bootstrapping phase of a software project?	oscsp-41		50	EN	Between Sat noon and Sun noon	yes	yes	Sun	14:30-15:30	107	http://conference.opensuse.org/indico//abstractManagment.py?confId=4&amp;abstractId=17		B
 osc-53	Talk	Zen and the art of Live Programming with Clojure	oscsp-45	samaaron@gmail.com	50	EN			yes	Sun	12:00-13:00	105			B
-osc-54	Talk	Performance monitoring of modern X86 platforms using the CPUpower monitoring tool	Thomas Renninger	trenn@suse.de	20	EN			yes	Sun	14:30-15:00	105			H
+osc-54	Talk	Performance monitoring of modern X86 platforms using the CPUpower monitoring tool	Thomas Renninger	trenn@suse.de	20	EN			yes	Sat	14:30-15:00	105			H
 osc-55	Workshop	Kolab: Technology for Collaboration in Freedom	fmtsp-06		50	EN				Sun	11:00-12:30	PC2			B
 osc-60	Talk	Apocalypse Now - News from the Network Jungle	Olaf Kirch, Marius Tomaschewski			EN				Sun	15:00-15:30	155			I
 osc-61	Talk	Unity on openSUSE	oscsp-54		20	EN				Sun	11:30-12:00	155			B
