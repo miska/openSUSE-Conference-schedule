@@ -80,6 +80,7 @@ sed-rules: Makefile tail-template1.html track-template.html speaker-template.htm
 	echo 's|>FUTURE MEDIA Track<|><a href="http://bootstrapping-awesome.org/future-media"><img class="logo" src="static/fm_male.png" alt="FUTURE MEDIA track"/></a><|g'    >> $@
 	echo 's|>Gentoo<|><a href="http://miniconf.gentoo.org"><img class="logo" src="static/gentoo_male.png" alt="Gentoo miniconf"/></a><|g'    >> $@
 	echo 's|>LinuxDays<|><a href="http://www.linuxdays.cz"><img class="logo" src="static/linuxdays_male.png" alt="LinuxDays"/></a><|g'    >> $@
+	echo 's|>Labs<|><img class="logo" src="static/labs_male.png" alt="SUSE Labs Conference"/><|g' >> $@
 	echo 's|>BFT<|><img class="logo" src="static/bft_male.png" alt="Business Friendly Track"/><|g' >> $@
 	cat tail-template1.html > tail-generated.html
 	# Create talks modals
