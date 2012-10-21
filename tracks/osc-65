@@ -1,1 +1,5 @@
-NO SUMMARY
+This session will show how to quickly and easily build customized Linux
+images with SUSE Studio. These images are targeted but not limited to
+cloud (SUSE Cloud, Amazon EC2, Microsoft Azure) and data center (VMware,
+Xen, KVM, bare-metal) deployments. You can do it all from a single,
+simple-to-use web configuration tool.
